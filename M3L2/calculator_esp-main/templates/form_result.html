@@ -1,0 +1,21 @@
+<!-- Crear una página que emita los datos del usuario -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../static/css/style.css">
+</head>
+<body>
+    <div class="form_result">
+        {% block content %}
+        <h1> Gracias por llenar el formulario</h1>
+        <p>Tu nombre: {{name}}</p>
+        <p>Tu Email: {{email}}</p>
+        <p>Tu dirección: {{address}}</p>
+        <p>Tu fecha: {{date}}</p>
+        {% endblock %}
+    </div>
+</body>
+</html>
